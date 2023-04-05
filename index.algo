@@ -1,0 +1,12 @@
+PROCEDURE palindrom(x,y;INTEGER,carts:STRING[10])
+BEGIN
+    IF (carts.length = 0 OR x = y) THEN
+    Write("it's palnirome")
+    ELSE
+    IF (carts[x] = carts[y]) THEN
+    palindrom(x+1,y-1, carts)
+    ELSE
+    Write("it's not palindrome")
+    END_IF
+    END_IF
+END
